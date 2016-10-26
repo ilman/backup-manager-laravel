@@ -220,10 +220,10 @@ class DbBackupCommand extends Command {
      */
     protected function getOptions() {
         return [
-            ['database', 'mysql', InputOption::VALUE_OPTIONAL, 'Database configuration name', null],
-            ['destination', 'local', InputOption::VALUE_OPTIONAL, 'Destination configuration name', null],
-            ['destinationPath', 'backup.sql', InputOption::VALUE_OPTIONAL, 'File destination path', null],
-            ['compression', 'null', InputOption::VALUE_OPTIONAL, 'Compression type', null],
+            ['database', null, InputOption::VALUE_OPTIONAL, 'Database configuration name', 'mysql'],
+            ['destination', null, InputOption::VALUE_OPTIONAL, 'Destination configuration name', 'local'],
+            ['destinationPath', null, InputOption::VALUE_OPTIONAL, 'File destination path', 'backup.sql'],
+            ['compression', null, InputOption::VALUE_OPTIONAL, 'Compression type', 'null'],
         ];
     }
 }
