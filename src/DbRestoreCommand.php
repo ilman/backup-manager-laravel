@@ -247,10 +247,10 @@ class DbRestoreCommand extends Command {
      */
     protected function getOptions() {
         return [
-            ['source', null, InputOption::VALUE_OPTIONAL, 'Source configuration name', null],
-            ['sourcePath', null, InputOption::VALUE_OPTIONAL, 'Source path from service', null],
-            ['database', null, InputOption::VALUE_OPTIONAL, 'Database configuration name', null],
-            ['compression', null, InputOption::VALUE_OPTIONAL, 'Compression type', null],
+            ['source', null, InputOption::VALUE_OPTIONAL, 'Source configuration name', 'local'],
+            ['sourcePath', null, InputOption::VALUE_OPTIONAL, 'Source path from service', 'backup.sql'],
+            ['database', null, InputOption::VALUE_OPTIONAL, 'Database configuration name', 'mysql'],
+            ['compression', null, InputOption::VALUE_OPTIONAL, 'Compression type', 'null'],
         ];
     }
 
